@@ -8,7 +8,7 @@ sap.ui.define(
                 manifest: "json"
             },
             init: function () {
-                console.log("Version 1.01 22.04.2026/15:36 Uhr");
+                console.log("Version 1.01 22.04.2026/15:41Uhr");
                 Component.prototype.init.apply(this, arguments);
             }
         });
