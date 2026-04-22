@@ -1,0 +1,28 @@
+{
+  "generationParameters": {
+    "generationDate": "Wed Apr 22 2026 11:34:56 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "OData URL",
+    "metadataFilename": "",
+    "serviceUrl": "http://20.23.252.13:50000/sap/opu/odata/sap/Z_SB_OVP_MAIN",
+    "appName": "zovpbudget",
+    "appTitle": "Budget Overview",
+    "appDescription": "Budget Overview Page",
+    "appNamespace": "nes",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.120.23",
+    "enableEslint": true,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.22.0",
+    "template": "Overview Page V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Filter Entity Type",
+        "value": "GlobalFilter"
+      }
+    ],
+    "launchText": "To launch the generated application, run the following from the generated application root folder:\n\n```\n    npm start\n```"
+  }
+}

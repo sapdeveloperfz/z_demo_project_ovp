@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "4.0"
+metadata:
+  name: nes.zovpbudget
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          url: http://20.23.252.13:50000
+        app:
+          name: ZOVPBUDGET
+          description: Budget Overview
+          package: Z_OVP_PROJECT_DEMO
+          transport: S4HK903043
+        exclude:
+          - /test/
