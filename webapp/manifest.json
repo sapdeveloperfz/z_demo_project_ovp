@@ -146,6 +146,7 @@
         "template": "sap.ovp.cards.charts.analytical",
         "settings": {
           "title": "{{cardBudgetTitle}}",
+          "subTitle": "{{cardBudgetSubTitle}}",
           "entitySet": "BudgetGraphic",
           "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#DonutChart",
           "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#DonutVariant",
