@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value">
-        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
+        <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common" />
     </edmx:Reference>
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value">
-        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
+        <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI" />
     </edmx:Reference>
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value">
-        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
+        <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication" />
     </edmx:Reference>
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value">
-        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
+        <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData" />
     </edmx:Reference>
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value">
-        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
+        <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation" />
     </edmx:Reference>
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value">
-        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
+        <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics" />
     </edmx:Reference>
     <edmx:Reference Uri="../../catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_HTML5',Version='0001',SAP__Origin='')/$value">
-        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5"/>
+        <edmx:Include Namespace="com.sap.vocabularies.HTML5.v1" Alias="HTML5" />
     </edmx:Reference>
     <edmx:Reference Uri="../../../sap/z_sb_ovp_main/$metadata">
-        <edmx:Include Namespace="Z_SB_OVP_MAIN" Alias="SAP"/>
+        <edmx:Include Namespace="cds_z_sd_ovp_main" />
     </edmx:Reference>
     <edmx:DataServices>
         <Schema Namespace="z_sb_ovp_main_van.v1" xmlns="http://docs.oasis-open.org/odata/ns/edm">
             <Annotations Target="cds_z_sd_ovp_main.GlobalFilterType">
                 <Annotation Term="UI.SelectionFields">
                     <Collection>
-                        <PropertyPath>Buchungskreis</PropertyPath>
                         <PropertyPath>Kostenrechnungskreis</PropertyPath>
+                        <PropertyPath>Buchungskreis</PropertyPath>
                         <PropertyPath>Projekt</PropertyPath>
                         <PropertyPath>PspElement</PropertyPath>
                     </Collection>
@@ -39,7 +39,7 @@
             <Annotations Target="cds_z_sd_ovp_main.BudgetCardType">
                 <Annotation Term="UI.Chart" Qualifier="DonutChart">
                     <Record Type="UI.ChartDefinitionType">
-                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut"/>
+                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut" />
                         <PropertyValue Property="Dimensions">
                             <Collection>
                                 <PropertyPath>PspBeschreibung</PropertyPath>
@@ -48,8 +48,8 @@
                         <PropertyValue Property="DimensionAttributes">
                             <Collection>
                                 <Record Type="UI.ChartDimensionAttributeType">
-                                    <PropertyValue Property="Dimension" PropertyPath="PspBeschreibung"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Series"/>
+                                    <PropertyValue Property="Dimension" PropertyPath="PspBeschreibung" />
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Series" />
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -61,8 +61,8 @@
                         <PropertyValue Property="MeasureAttributes">
                             <Collection>
                                 <Record Type="UI.ChartMeasureAttributeType">
-                                    <PropertyValue Property="Measure" PropertyPath="BudgetVerbraucht"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+                                    <PropertyValue Property="Measure" PropertyPath="BudgetVerbraucht" />
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1" />
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -70,39 +70,61 @@
                 </Annotation>
                 <Annotation Term="UI.DataPoint" Qualifier="BudgetDP">
                     <Record>
-                        <PropertyValue Property="Value" Path="BudgetGesamt"/>
-                        <PropertyValue Property="Title" String="Annual Value"/>
-                    </Record>
-                </Annotation>
-                <Annotation Term="UI.HeaderInfo">
-                    <Record>
-                        <PropertyValue Property="TypeName" String=""/>
-                        <PropertyValue Property="TypeNamePlural" String=""/>
-                        <PropertyValue Property="Title">
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="Projekt"/>
-                            </Record>
-                        </PropertyValue>
-                        <PropertyValue Property="Description">
-                            <Record Type="UI.DataField">
-                                <PropertyValue Property="Value" Path="ProjektBeschreibung"/>
-                            </Record>
-                        </PropertyValue>
+                        <PropertyValue Property="Value" Path="BudgetGesamt" />
+                        <PropertyValue Property="Title" String="Jahreswert" />
                     </Record>
                 </Annotation>
                 <Annotation Term="UI.LineItem">
                     <Collection>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Label" String=""/>
-                            <PropertyValue Property="Value" Path="BudgetGesamt"/>
+                            <PropertyValue Property="Label" String="Kostenrechnungskreis" />
+                            <PropertyValue Property="Value" Path="Kostenrechnungskreis" />
+                            <Annotation Term="HTML5.CssDefaults">
+                                <Record>
+                                    <PropertyValue Property="width" String="10rem" />
+                                </Record>
+                            </Annotation>
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Label" String=""/>
-                            <PropertyValue Property="Value" Path="BudgetVerbraucht"/>
+                            <PropertyValue Property="Label" String="Buchungskreis" />
+                            <PropertyValue Property="Value" Path="Buchungskreis" />
+                            <Annotation Term="HTML5.CssDefaults">
+                                <Record>
+                                    <PropertyValue Property="width" String="7rem" />
+                                </Record>
+                            </Annotation>
                         </Record>
                         <Record Type="UI.DataField">
-                            <PropertyValue Property="Label" String=""/>
-                            <PropertyValue Property="Value" Path="BudgetVerfuegbar"/>
+                            <PropertyValue Property="Label" String="Projekt" />
+                            <PropertyValue Property="Value" Path="Projekt" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Projekttext" />
+                            <PropertyValue Property="Value" Path="ProjektBeschreibung" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="PSP-Element" />
+                            <PropertyValue Property="Value" Path="PspElement" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="PSP-Text" />
+                            <PropertyValue Property="Value" Path="PspBeschreibung" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Jahr" />
+                            <PropertyValue Property="Value" Path="Geschaeftsjahr" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Gesamt" />
+                            <PropertyValue Property="Value" Path="BudgetGesamt" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Verfügt" />
+                            <PropertyValue Property="Value" Path="BudgetVerbraucht" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Verfügbar" />
+                            <PropertyValue Property="Value" Path="BudgetVerfuegbar" />
                         </Record>
                     </Collection>
                 </Annotation>
@@ -115,20 +137,12 @@
                         </PropertyValue>
                     </Record>
                 </Annotation>
-                <Annotation Term="UI.SelectionFields">
-                    <Collection>
-                        <PropertyPath>Kostenrechnungskreis</PropertyPath>
-                        <PropertyPath>Buchungskreis</PropertyPath>
-                        <PropertyPath>Projekt</PropertyPath>
-                        <PropertyPath>PspElement</PropertyPath>
-                    </Collection>
-                </Annotation>
             </Annotations>
             <Annotations Target="cds_z_sd_ovp_main.BudgetGraphicType">
                 <Annotation Term="UI.Chart" Qualifier="DonutChart">
                     <Record Type="UI.ChartDefinitionType">
-                        <PropertyValue Property="Description" String="Test"/>
-                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut"/>
+                        <PropertyValue Property="Description" String="Budget pro Status" />
+                        <PropertyValue Property="ChartType" EnumMember="UI.ChartType/Donut" />
                         <PropertyValue Property="Dimensions">
                             <Collection>
                                 <PropertyPath>BudgetKategorie</PropertyPath>
@@ -137,8 +151,8 @@
                         <PropertyValue Property="DimensionAttributes">
                             <Collection>
                                 <Record Type="UI.ChartDimensionAttributeType">
-                                    <PropertyValue Property="Dimension" PropertyPath="BudgetKategorie"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Series"/>
+                                    <PropertyValue Property="Dimension" PropertyPath="BudgetKategorie" />
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartDimensionRoleType/Series" />
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -150,8 +164,8 @@
                         <PropertyValue Property="MeasureAttributes">
                             <Collection>
                                 <Record Type="UI.ChartMeasureAttributeType">
-                                    <PropertyValue Property="Measure" PropertyPath="Betrag"/>
-                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1"/>
+                                    <PropertyValue Property="Measure" PropertyPath="Betrag" />
+                                    <PropertyValue Property="Role" EnumMember="UI.ChartMeasureRoleType/Axis1" />
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -159,14 +173,17 @@
                 </Annotation>
                 <Annotation Term="UI.DataPoint" Qualifier="BudgetDP">
                     <Record>
-                        <PropertyValue Property="Value" Path="BudgetGesamt"/>
-                        <PropertyValue Property="Title" String="Annual Value"/>
+                        <PropertyValue Property="Value" Path="BudgetGesamt" />
+                        <PropertyValue Property="Title" String="Jahreswert" />
                     </Record>
                 </Annotation>
                 <Annotation Term="UI.Identification">
                     <Collection>
-                        <Record Type="UI.DataField">
-                            <PropertyValue Property="Value" Path="Projekt"/>
+                        <Record Type="UI.DataFieldForIntentBasedNavigation">
+                            <PropertyValue Property="Label" String="Budgetdetails" />
+                            <PropertyValue Property="SemanticObject" String="ZDemoBudget" />
+                            <PropertyValue Property="Action" String="display" />
+                            <PropertyValue Property="RequiresContext" Bool="false" />
                         </Record>
                     </Collection>
                 </Annotation>
@@ -178,6 +195,34 @@
                             </Collection>
                         </PropertyValue>
                     </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_z_sd_ovp_main.PlanIstCardType">
+                <Annotation Term="UI.LineItem">
+                    <Collection>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Projekt" />
+                            <PropertyValue Property="Value" Path="Projekt" />
+                        </Record>
+                        <Record Type="UI.DataFieldForIntentBasedNavigation">
+                            <PropertyValue Property="Label" String="PSP-Element" />
+                            <PropertyValue Property="SemanticObject" String="Project" />
+                            <PropertyValue Property="Action" String="displayFinancialReport" />
+                            <PropertyValue Property="RequiresContext" Bool="false" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Version 0" />
+                            <PropertyValue Property="Value" Path="Version0" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Ist" />
+                            <PropertyValue Property="Value" Path="IstBetrag" />
+                        </Record>
+                        <Record Type="UI.DataField">
+                            <PropertyValue Property="Label" String="Abweichung" />
+                            <PropertyValue Property="Value" Path="Abweichung" />
+                        </Record>
+                    </Collection>
                 </Annotation>
             </Annotations>
         </Schema>

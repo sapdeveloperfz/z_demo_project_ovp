@@ -23,22 +23,13 @@
           "localUri": "localService/mainService/Z_SB_OVP_MAIN_VAN.xml"
         }
       },
-      "annotation": {
-        "type": "ODataAnnotation",
-        "uri": "annotations/annotation.xml",
-        "settings": {
-          "localUri": "annotations/annotation.xml"
-        }
-      },
       "mainService": {
         "uri": "/sap/opu/odata/sap/Z_SB_OVP_MAIN/",
         "type": "OData",
         "settings": {
           "annotations": [
-            "Z_SB_OVP_MAIN_VAN",
-            "annotation"
+            "Z_SB_OVP_MAIN_VAN"
           ],
-          "localUri": "localService/mainService/metadata.xml",
           "odataVersion": "2.0"
         }
       }
@@ -154,6 +145,68 @@
           "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification",
           "defaultSpan": {
             "rows": 20,
+            "cols": 2
+          }
+        }
+      },
+      "card02_PlanIst": {
+        "model": "mainModel",
+        "template": "sap.ovp.cards.table",
+        "settings": {
+          "title": "{{cardPlanIstTitle}}",
+          "subTitle": "{{cardPlanIstSubTitle}}",
+          "entitySet": "PlanIstCard",
+          "addODataSelect": "false",
+          "defaultSpan": {
+            "rows": 10,
+            "cols": 1
+          }
+        }
+      },
+      "card03_PlanIstChart": {
+        "model": "mainModel",
+        "template": "sap.ovp.cards.charts.analytical",
+        "settings": {
+          "title": "{{cardPlanIstChartTitle}}",
+          "subTitle": "{{cardPlanIstChartSubTitle}}",
+          "entitySet": "PlanIstChart",
+          "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#LineChart",
+          "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#LineVariant",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification",
+          "defaultSpan": {
+            "rows": 15,
+            "cols": 2
+          }
+        }
+      },
+      "card04_BarChart": {
+        "model": "mainModel",
+        "template": "sap.ovp.cards.charts.analytical",
+        "settings": {
+          "title": "{{cardBarChartTitle}}",
+          "subTitle": "{{cardBarChartSubTitle}}",
+          "entitySet": "PlanIstBar",
+          "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#BarChart",
+          "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#BarVariant",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification",
+          "defaultSpan": {
+            "rows": 15,
+            "cols": 2
+          }
+        }
+      },
+      "card05_BestellChart": {
+        "model": "mainModel",
+        "template": "sap.ovp.cards.charts.analytical",
+        "settings": {
+          "title": "{{cardBestellChartTitle}}",
+          "subTitle": "{{cardBestellChartSubTitle}}",
+          "entitySet": "OrderCard",
+          "chartAnnotationPath": "com.sap.vocabularies.UI.v1.Chart#BestellBarChart",
+          "presentationAnnotationPath": "com.sap.vocabularies.UI.v1.PresentationVariant#BestellBarVariant",
+          "identificationAnnotationPath": "com.sap.vocabularies.UI.v1.Identification",
+          "defaultSpan": {
+            "rows": 15,
             "cols": 2
           }
         }

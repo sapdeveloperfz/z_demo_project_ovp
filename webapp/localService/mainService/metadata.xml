@@ -1,57 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_AGGREGATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Aggregation.V1" Alias="Aggregation"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_ANALYTICS',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Analytics.v1" Alias="Analytics"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CAPABILITIES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Capabilities.V1" Alias="Capabilities"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CODELIST',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.CodeList.v1" Alias="SAP__CodeList"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMON',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="Common"/>
         <edmx:Include Namespace="com.sap.vocabularies.Common.v1" Alias="SAP__common"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_COMMUNICATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.Communication.v1" Alias="Communication"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_CORE',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Core.V1" Alias="SAP__core"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_MEASURES',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Measures.V1" Alias="Measures"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PDF',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PDF',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.PDF.v1" Alias="SAP__PDF"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_PERSONALDATA',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.PersonalData.v1" Alias="PersonalData"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_UI',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="com.sap.vocabularies.UI.v1" Alias="UI"/>
     </edmx:Reference>
-    <edmx:Reference Uri="./sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+    <edmx:Reference Uri="http://20.23.252.13:50000/sap/opu/odata/iwfnd/catalogservice;v=2/Vocabularies(TechnicalName='%2FIWBEP%2FVOC_VALIDATION',Version='0001',SAP__Origin='')/$value" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
         <edmx:Include Namespace="Org.OData.Validation.V1" Alias="Validation"/>
     </edmx:Reference>
     <edmx:DataServices m:DataServiceVersion="2.0">
         <Schema Namespace="cds_z_sd_ovp_main" xml:lang="en" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityType Name="I_CompanyCodeStdVHType" sap:label="Company Code" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="CompanyCode"/>
+                </Key>
+                <Property Name="CompanyCode" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:text="CompanyCodeName" sap:label="Company Code"/>
+                <Property Name="CompanyCodeName" Type="Edm.String" MaxLength="25" sap:label="Company Name" sap:quickinfo="Name of Company Code or Company"/>
+            </EntityType>
+            <EntityType Name="I_ControllingAreaStdVHType" sap:label="Controlling Area" sap:value-list="true" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="ControllingArea"/>
+                </Key>
+                <Property Name="ControllingArea" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:text="ControllingAreaName" sap:label="Controlling Area"/>
+                <Property Name="ControllingAreaName" Type="Edm.String" MaxLength="25" sap:label="Controlling Area Name"/>
+            </EntityType>
             <EntityType Name="GlobalFilterType" sap:content-version="1">
                 <Key>
-                    <PropertyRef Name="Buchungskreis"/>
                     <PropertyRef Name="Kostenrechnungskreis"/>
+                    <PropertyRef Name="Buchungskreis"/>
                     <PropertyRef Name="Projekt"/>
                     <PropertyRef Name="PspElement"/>
                 </Key>
-                <Property Name="Buchungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:filter-restriction="multi-value" sap:label="Company Code"/>
-                <Property Name="Kostenrechnungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:filter-restriction="multi-value" sap:label="Controlling Area"/>
-                <Property Name="Projekt" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:filter-restriction="multi-value" sap:label="Project Def." sap:quickinfo="Project (internal)"/>
-                <Property Name="PspElement" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:filter-restriction="multi-value" sap:label="WBS Internal ID" sap:quickinfo="WBS Element"/>
-                <Property Name="ProjektBeschreibung" Type="Edm.String" MaxLength="40" sap:label="Project Def. Name" sap:quickinfo="Project Definition Name"/>
-                <Property Name="PspBeschreibung" Type="Edm.String" MaxLength="40" sap:label="WBS Element Name" sap:quickinfo="Work Breakdown Structure Element Name"/>
+                <Property Name="Kostenrechnungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:filter-restriction="multi-value" sap:label="Controlling Area" sap:heading="" sap:value-list="standard"/>
+                <Property Name="Buchungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:filter-restriction="multi-value" sap:label="Company Code" sap:heading="" sap:value-list="standard"/>
+                <Property Name="Projekt" Type="Edm.String" Nullable="false" MaxLength="25" sap:filter-restriction="multi-value" sap:label=""/>
+                <Property Name="PspElement" Type="Edm.String" Nullable="false" MaxLength="25" sap:filter-restriction="multi-value" sap:label=""/>
             </EntityType>
             <EntityType Name="BudgetCardType" sap:content-version="1">
                 <Key>
@@ -59,18 +71,20 @@
                     <PropertyRef Name="Buchungskreis"/>
                     <PropertyRef Name="Projekt"/>
                     <PropertyRef Name="PspElement"/>
+                    <PropertyRef Name="Geschaeftsjahr"/>
+                    <PropertyRef Name="Version"/>
                 </Key>
-                <Property Name="Kostenrechnungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Controlling Area" sap:heading=""/>
-                <Property Name="Buchungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Company Code" sap:heading=""/>
-                <Property Name="Projekt" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:label="Project Def." sap:heading="" sap:quickinfo="Project (internal)"/>
-                <Property Name="PspElement" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:label="WBS Internal ID" sap:heading="" sap:quickinfo="WBS Element"/>
-                <Property Name="Geschaeftsjahr" Type="Edm.String" MaxLength="4" sap:display-format="NonNegative" sap:label="Fiscal Year" sap:heading=""/>
-                <Property Name="Version" Type="Edm.String" MaxLength="3" sap:display-format="UpperCase" sap:label="Version" sap:heading="" sap:quickinfo="Planning/budgeting version"/>
-                <Property Name="ProjektBeschreibung" Type="Edm.String" MaxLength="40" sap:label="Project Def. Name" sap:heading="" sap:quickinfo="Project Definition Name"/>
-                <Property Name="PspBeschreibung" Type="Edm.String" MaxLength="40" sap:label="WBS Element Name" sap:heading="" sap:quickinfo="Work Breakdown Structure Element Name"/>
-                <Property Name="BudgetGesamt" Type="Edm.Decimal" Precision="15" Scale="3" sap:unit="Waehrung" sap:variable-scale="true" sap:label="Annual Value" sap:heading="" sap:quickinfo="Annual value in transaction currency"/>
-                <Property Name="BudgetVerbraucht" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="Waehrung" sap:variable-scale="true" sap:label=""/>
-                <Property Name="BudgetVerfuegbar" Type="Edm.Decimal" Precision="15" Scale="3" sap:unit="Waehrung" sap:variable-scale="true" sap:label=""/>
+                <Property Name="Kostenrechnungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Controlling Area"/>
+                <Property Name="Buchungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Company Code"/>
+                <Property Name="Projekt" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:label="Project Def." sap:quickinfo="Project (internal)"/>
+                <Property Name="PspElement" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:label="WBS Internal ID" sap:quickinfo="WBS Element"/>
+                <Property Name="Geschaeftsjahr" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="NonNegative" sap:label="Fiscal Year"/>
+                <Property Name="Version" Type="Edm.String" Nullable="false" MaxLength="3" sap:display-format="UpperCase" sap:label="Version" sap:quickinfo="Planning/budgeting version"/>
+                <Property Name="ProjektBeschreibung" Type="Edm.String" MaxLength="40" sap:label="Project Def. Name" sap:quickinfo="Project Definition Name"/>
+                <Property Name="PspBeschreibung" Type="Edm.String" MaxLength="40" sap:label="WBS Element Name" sap:quickinfo="Work Breakdown Structure Element Name"/>
+                <Property Name="BudgetGesamt" Type="Edm.Decimal" Precision="15" Scale="3" sap:unit="Waehrung" sap:variable-scale="true" sap:label="Annual Value" sap:quickinfo="Annual value in transaction currency"/>
+                <Property Name="BudgetVerbraucht" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="Waehrung" sap:variable-scale="true"/>
+                <Property Name="BudgetVerfuegbar" Type="Edm.Decimal" Precision="15" Scale="3" sap:unit="Waehrung" sap:variable-scale="true"/>
                 <Property Name="Waehrung" Type="Edm.String" MaxLength="5" sap:display-format="UpperCase" sap:label="Transaction Currency" sap:semantics="currency-code"/>
             </EntityType>
             <EntityType Name="BudgetGraphicType" sap:content-version="1">
@@ -85,14 +99,36 @@
                 <Property Name="PspElement" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:label="WBS Internal ID" sap:quickinfo="WBS Element"/>
                 <Property Name="Geschaeftsjahr" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="NonNegative" sap:label="Fiscal Year"/>
                 <Property Name="Version" Type="Edm.String" Nullable="false" MaxLength="3" sap:display-format="UpperCase" sap:label="Version" sap:quickinfo="Planning/budgeting version"/>
-                <Property Name="BudgetKategorie" Type="Edm.String" Nullable="false" MaxLength="20"/>
+                <Property Name="BudgetKategorie" Type="Edm.String" Nullable="false" MaxLength="20" sap:label=""/>
                 <Property Name="ProjektBeschreibung" Type="Edm.String" MaxLength="40" sap:label="Project Def. Name" sap:quickinfo="Project Definition Name"/>
                 <Property Name="PspBeschreibung" Type="Edm.String" MaxLength="40" sap:label="WBS Element Name" sap:quickinfo="Work Breakdown Structure Element Name"/>
                 <Property Name="Buchungskreis" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Company Code"/>
                 <Property Name="Kostenrechnungskreis" Type="Edm.String" MaxLength="4" sap:display-format="UpperCase" sap:label="Controlling Area"/>
-                <Property Name="Betrag" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="Waehrung" sap:variable-scale="true"/>
+                <Property Name="Betrag" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="Waehrung" sap:variable-scale="true" sap:label=""/>
                 <Property Name="BudgetGesamt" Type="Edm.Decimal" Precision="15" Scale="3" sap:unit="Waehrung" sap:variable-scale="true" sap:label="Annual Value" sap:quickinfo="Annual value in transaction currency"/>
                 <Property Name="Ampel" Type="Edm.Byte"/>
+                <Property Name="Waehrung" Type="Edm.String" MaxLength="5" sap:display-format="UpperCase" sap:label="Transaction Currency" sap:semantics="currency-code"/>
+            </EntityType>
+            <EntityType Name="PlanIstCardType" sap:content-version="1">
+                <Key>
+                    <PropertyRef Name="Kostenrechnungskreis"/>
+                    <PropertyRef Name="Buchungskreis"/>
+                    <PropertyRef Name="Projekt"/>
+                    <PropertyRef Name="PspElement"/>
+                    <PropertyRef Name="Geschaeftsjahr"/>
+                    <PropertyRef Name="Version"/>
+                </Key>
+                <Property Name="Kostenrechnungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Controlling Area"/>
+                <Property Name="Buchungskreis" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="UpperCase" sap:label="Company Code"/>
+                <Property Name="Projekt" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:label="Project Def." sap:quickinfo="Project (internal)"/>
+                <Property Name="PspElement" Type="Edm.String" Nullable="false" MaxLength="8" sap:display-format="NonNegative" sap:label="WBS Internal ID" sap:quickinfo="WBS Element"/>
+                <Property Name="Geschaeftsjahr" Type="Edm.String" Nullable="false" MaxLength="4" sap:display-format="NonNegative" sap:label="Fiscal Year"/>
+                <Property Name="Version" Type="Edm.String" Nullable="false" MaxLength="3" sap:display-format="UpperCase" sap:label="Version" sap:quickinfo="Planning/budgeting version"/>
+                <Property Name="ProjektBeschreibung" Type="Edm.String" MaxLength="40" sap:label="Project Def. Name" sap:quickinfo="Project Definition Name"/>
+                <Property Name="PspBeschreibung" Type="Edm.String" MaxLength="40" sap:label="WBS Element Name" sap:quickinfo="Work Breakdown Structure Element Name"/>
+                <Property Name="Version0" Type="Edm.Decimal" Precision="15" Scale="3" sap:unit="Waehrung" sap:variable-scale="true" sap:label="Annual Value" sap:quickinfo="Annual value in transaction currency"/>
+                <Property Name="IstBetrag" Type="Edm.Decimal" Precision="23" Scale="3" sap:unit="Waehrung" sap:variable-scale="true"/>
+                <Property Name="Abweichung" Type="Edm.Decimal" Precision="15" Scale="3" sap:unit="Waehrung" sap:variable-scale="true"/>
                 <Property Name="Waehrung" Type="Edm.String" MaxLength="5" sap:display-format="UpperCase" sap:label="Transaction Currency" sap:semantics="currency-code"/>
             </EntityType>
             <EntityType Name="SAP__Currency" sap:content-version="1">
@@ -332,9 +368,12 @@
                 <EntitySet Name="SAP__PDFHeaderSet" EntityType="cds_z_sd_ovp_main.SAP__PDFHeader" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="SAP__PDFFooterSet" EntityType="cds_z_sd_ovp_main.SAP__PDFFooter" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/>
                 <EntitySet Name="SAP__ValueHelpSet" EntityType="cds_z_sd_ovp_main.SAP__ValueHelp" sap:content-version="1"/>
+                <EntitySet Name="I_CompanyCodeStdVH" EntityType="cds_z_sd_ovp_main.I_CompanyCodeStdVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
+                <EntitySet Name="I_ControllingAreaStdVH" EntityType="cds_z_sd_ovp_main.I_ControllingAreaStdVHType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:searchable="true" sap:content-version="1"/>
                 <EntitySet Name="GlobalFilter" EntityType="cds_z_sd_ovp_main.GlobalFilterType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
                 <EntitySet Name="BudgetCard" EntityType="cds_z_sd_ovp_main.BudgetCardType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
                 <EntitySet Name="BudgetGraphic" EntityType="cds_z_sd_ovp_main.BudgetGraphicType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
+                <EntitySet Name="PlanIstCard" EntityType="cds_z_sd_ovp_main.PlanIstCardType" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:content-version="1"/>
                 <EntitySet Name="SAP__Currencies" EntityType="cds_z_sd_ovp_main.SAP__Currency" sap:content-version="1"/>
                 <EntitySet Name="SAP__UnitsOfMeasure" EntityType="cds_z_sd_ovp_main.SAP__UnitOfMeasure" sap:content-version="1"/>
                 <EntitySet Name="SAP__MyDocumentDescriptions" EntityType="cds_z_sd_ovp_main.SAP__DocumentDescription" sap:content-version="1"/>
@@ -372,6 +411,46 @@
                 </AssociationSet>
             </EntityContainer>
             <Annotation Term="Core.SchemaVersion" String="1.0.0" xmlns="http://docs.oasis-open.org/odata/ns/edm"/>
+            <Annotations Target="cds_z_sd_ovp_main.GlobalFilterType/Kostenrechnungskreis" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Controlling Area"/>
+                        <PropertyValue Property="CollectionPath" String="I_ControllingAreaStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Kostenrechnungskreis"/>
+                                    <PropertyValue Property="ValueListProperty" String="ControllingArea"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="ControllingAreaName"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
+            <Annotations Target="cds_z_sd_ovp_main.GlobalFilterType/Buchungskreis" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.ValueList">
+                    <Record>
+                        <PropertyValue Property="Label" String="Company Code"/>
+                        <PropertyValue Property="CollectionPath" String="I_CompanyCodeStdVH"/>
+                        <PropertyValue Property="SearchSupported" Bool="true"/>
+                        <PropertyValue Property="Parameters">
+                            <Collection>
+                                <Record Type="Common.ValueListParameterInOut">
+                                    <PropertyValue Property="LocalDataProperty" PropertyPath="Buchungskreis"/>
+                                    <PropertyValue Property="ValueListProperty" String="CompanyCode"/>
+                                </Record>
+                                <Record Type="Common.ValueListParameterDisplayOnly">
+                                    <PropertyValue Property="ValueListProperty" String="CompanyCodeName"/>
+                                </Record>
+                            </Collection>
+                        </PropertyValue>
+                    </Record>
+                </Annotation>
+            </Annotations>
             <Annotations Target="cds_z_sd_ovp_main.cds_z_sd_ovp_main_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.ApplyMultiUnitBehaviorForSortingAndFiltering" Bool="true"/>
             </Annotations>
@@ -381,11 +460,11 @@
                         <PropertyValue Property="FilterExpressionRestrictions">
                             <Collection>
                                 <Record>
-                                    <PropertyValue Property="Property" PropertyPath="Buchungskreis"/>
+                                    <PropertyValue Property="Property" PropertyPath="Kostenrechnungskreis"/>
                                     <PropertyValue Property="AllowedExpressions" String="MultiValue"/>
                                 </Record>
                                 <Record>
-                                    <PropertyValue Property="Property" PropertyPath="Kostenrechnungskreis"/>
+                                    <PropertyValue Property="Property" PropertyPath="Buchungskreis"/>
                                     <PropertyValue Property="AllowedExpressions" String="MultiValue"/>
                                 </Record>
                                 <Record>
@@ -403,6 +482,9 @@
             </Annotations>
             <Annotations Target="cds_z_sd_ovp_main.BudgetGraphicType/Projekt" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Common.SemanticObject" String="ZDemoBudget"/>
+            </Annotations>
+            <Annotations Target="cds_z_sd_ovp_main.PlanIstCardType/PspElement" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Common.SemanticObject" String="Project"/>
             </Annotations>
             <Annotations Target="cds_z_sd_ovp_main.cds_z_sd_ovp_main_Entities" xmlns="http://docs.oasis-open.org/odata/ns/edm">
                 <Annotation Term="Org.OData.Capabilities.V1.BatchSupport">
